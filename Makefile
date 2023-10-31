@@ -1,4 +1,4 @@
-BASE_PKGS	:= vim-common build-essential
+BASE_PKGS	:= vim-common build-essential curl wget
 BASE_PKGS += libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev libgdbm-dev libbz2-dev liblzma-dev zlib1g-dev uuid-dev libffi-dev libdb-dev
 # BASE_PKGS	+= pciutils psmisc shadow util-linux bzip2 gzip xz licenses pacman systemd systemd-sysvcompat 
 PACMAN		:= sudo pacman -S
