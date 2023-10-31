@@ -48,3 +48,7 @@ tmux:
 	$(APTINSTALL) $@
 	cp ${HOME}/Dropbox/.tmux.conf .tmux.conf
 	ln -sf .tmux ${HOME}/Dropbox/.tmux.conf
+
+codecs:
+	$(APTUPDATE)
+	$(APTINSTALL) ubuntu-restricted-extras
