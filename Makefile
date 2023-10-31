@@ -52,3 +52,8 @@ tmux:
 codecs:
 	$(APTUPDATE)
 	$(APTINSTALL) ubuntu-restricted-extras
+
+tools:
+	$(APTUPDATE)
+	$(APTINSTALL) gnome-tweaks meld keepassxc
+	sudo timedatectl set-local-rtc true
