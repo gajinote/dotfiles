@@ -21,7 +21,7 @@ ${HOME}/.local:
 
 ssh: ## Init ssh
 	mkdir -p ${HOME}/.$@
-	cp -rf ~/Dropbox/HOME/.$@ .$@
+	cp -rf ~/Dropbox/Home/.$@ ${HOME}/
 	chmod 600 ${HOME}/.ssh/id_rsa
 
 init: ## Initial deploy dotfiles
