@@ -63,8 +63,9 @@ tools:
 	./fonts/install.sh
 	rm -rf fonts
 	$(APTINSTALL)powerline
-	echo "if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; theni" >> ${HOME}/.bashrc
-	echo "  powerline-daemon -q\nPOWERLINE_BASH_CONTINUATION=1" >> ${HOME}/.bashrc
+	echo "if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then" >> ${HOME}/.bashrc
+	echo "  powerline-daemon -q" >> ${HOME}/.bashrc
+	echo "  POWERLINE_BASH_CONTINUATION=1" >> ${HOME}/.bashrc
 	echo "  POWERLINE_BASH_SELECT=1" >> ${HOME}/.bashrc
 	echo "  source /usr/share/powerline/bindings/bash/powerline.sh" >> ${HOME}/.bashrc
 	echo "fi" >> ${HOME}/.bashrc
