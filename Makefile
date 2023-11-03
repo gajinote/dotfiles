@@ -57,6 +57,7 @@ tools:
 	$(APTUPDATE)
 	$(APTINSTALL) gnome-tweaks meld keepassxc
 	sudo timedatectl set-local-rtc true
+	sudo hwclock --verbose --systohc --localtime 
 	gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 #powerLine font
 	git clone https://github.com/powerline/fonts.git --depth=1
