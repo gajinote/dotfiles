@@ -46,8 +46,8 @@ backup:
 tmux:
 	$(APTUPDATE)
 	$(APTINSTALL) $@
-	cp ${HOME}/Dropbox/.tmux.conf .tmux.conf
-	ln -sf .tmux ${HOME}/Dropbox/.tmux.conf
+	cp ${HOME}/Dropbox/Home/.tmux.conf ${HOME}/.tmux.conf
+# ln -sf ${HOME}/.tmux ${HOME}/Dropbox/Home/.tmux
 
 codecs:
 	$(APTUPDATE)
