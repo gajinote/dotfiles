@@ -70,3 +70,7 @@ tools:
 	echo "  POWERLINE_BASH_SELECT=1" >> ${HOME}/.bashrc
 	echo "  source /usr/share/powerline/bindings/bash/powerline.sh" >> ${HOME}/.bashrc
 	echo "fi" >> ${HOME}/.bashrc
+
+editor:
+	echo "Set Default Editor"
+	sudo update-alternatives --config editor
